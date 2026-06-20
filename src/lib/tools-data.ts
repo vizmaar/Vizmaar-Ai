@@ -19,6 +19,11 @@ import {
   Tag,
   Activity,
   DollarSign,
+<<<<<<< HEAD
+=======
+  Search,
+  UserCircle,
+>>>>>>> e6edf48e174f6317dd3e103a17e95c97dfc2d309
   LucideIcon,
 } from "lucide-react";
 
@@ -28,7 +33,13 @@ export type ToolCategory =
   | "Text"
   | "Calculator"
   | "Developer"
+<<<<<<< HEAD
   | "Business";
+=======
+  | "Business"
+  | "SEO"
+  | "AI";
+>>>>>>> e6edf48e174f6317dd3e103a17e95c97dfc2d309
 
 export interface Tool {
   slug: string;
@@ -43,6 +54,31 @@ export interface Tool {
 
 export const TOOLS: Tool[] = [
   {
+<<<<<<< HEAD
+=======
+    slug: "website-audit",
+    name: "Website Audit Tool",
+    description: "Enterprise-grade SEO, performance, and accessibility auditing with Lighthouse.",
+    longDescription:
+      "Run comprehensive website audits powered by Google PageSpeed Insights and advanced SEO analysis. Get Lighthouse scores, Core Web Vitals, actionable recommendations, and export professional PDF, CSV, and JSON reports.",
+    category: "SEO",
+    icon: Search,
+    keywords: ["website audit", "SEO audit", "Lighthouse", "PageSpeed", "Core Web Vitals"],
+    featured: true,
+  },
+  {
+    slug: "resume-builder",
+    name: "AI Resume & CV Builder",
+    description: "Build ATS-friendly resumes with AI suggestions and premium templates.",
+    longDescription:
+      "Create professional, ATS-optimized resumes and CVs with 6 premium templates. Features AI-powered summary generation, experience rewriting, ATS score checker, cover letter builder, and PDF export.",
+    category: "AI",
+    icon: UserCircle,
+    keywords: ["resume builder", "CV builder", "ATS", "cover letter", "job application"],
+    featured: true,
+  },
+  {
+>>>>>>> e6edf48e174f6317dd3e103a17e95c97dfc2d309
     slug: "invoice-generator",
     name: "Invoice Generator",
     description: "Create professional invoices and export to PDF instantly.",
@@ -264,6 +300,11 @@ export function getFeaturedTools(): Tool[] {
 }
 
 export const TOOL_CATEGORIES: ToolCategory[] = [
+<<<<<<< HEAD
+=======
+  "SEO",
+  "AI",
+>>>>>>> e6edf48e174f6317dd3e103a17e95c97dfc2d309
   "PDF",
   "Image",
   "Text",

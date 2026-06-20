@@ -5,11 +5,20 @@ import { Card } from "@/components/ui/Card";
 
 interface ToolLayoutProps {
   children: ReactNode;
+<<<<<<< HEAD
 }
 
 export function ToolLayout({ children }: ToolLayoutProps) {
   return (
     <Card className="max-w-3xl mx-auto">
+=======
+  wide?: boolean;
+}
+
+export function ToolLayout({ children, wide = false }: ToolLayoutProps) {
+  return (
+    <Card className={wide ? "max-w-5xl mx-auto" : "max-w-3xl mx-auto"}>
+>>>>>>> e6edf48e174f6317dd3e103a17e95c97dfc2d309
       <div className="space-y-6">{children}</div>
     </Card>
   );

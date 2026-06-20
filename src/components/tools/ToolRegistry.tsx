@@ -2,6 +2,11 @@ import dynamic from "next/dynamic";
 import { ComponentType } from "react";
 
 const toolComponents: Record<string, ComponentType> = {
+<<<<<<< HEAD
+=======
+  "website-audit": dynamic(() => import("./WebsiteAuditTool")),
+  "resume-builder": dynamic(() => import("./ResumeBuilder")),
+>>>>>>> e6edf48e174f6317dd3e103a17e95c97dfc2d309
   "invoice-generator": dynamic(() => import("./InvoiceGenerator")),
   "qr-code-generator": dynamic(() => import("./QRCodeGenerator")),
   "pdf-merger": dynamic(() => import("./PDFMerger")),

@@ -1,3 +1,7 @@
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+>>>>>>> e6edf48e174f6317dd3e103a17e95c97dfc2d309
 # VIZMAAR
 
 Premium free online tools — 100% client-side, no API, no signup.
@@ -35,3 +39,10 @@ Push to GitHub and import the project in [Vercel](https://vercel.com). No enviro
 - SEO-optimized blog with 22 articles
 - Dark/light theme toggle
 - Privacy-first — all processing in the browser
+<<<<<<< HEAD
+=======
+=======
+# Vizmaar-Ai
+All in one productivity Website
+>>>>>>> 38f028d9cafaa88272504922d70aeed9c813265e
+>>>>>>> e6edf48e174f6317dd3e103a17e95c97dfc2d309

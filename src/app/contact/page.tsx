@@ -54,7 +54,11 @@ export default function ContactPage() {
 
       <p className="text-sm text-muted mt-6 text-center">
         Or email us directly at{" "}
+<<<<<<< HEAD
         <a href="mailto:vizmaarwebs@gmail.com" className="text-brand hover:underline">vizmaarwebs@gmail.com</a>
+=======
+        <a href="mailto:hello@vizmaar.com" className="text-brand hover:underline">hello@vizmaar.com</a>
+>>>>>>> e6edf48e174f6317dd3e103a17e95c97dfc2d309
       </p>
     </div>
   );

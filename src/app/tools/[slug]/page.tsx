@@ -4,7 +4,11 @@ import { ArrowLeft } from "lucide-react";
 import { getToolBySlug, TOOLS } from "@/lib/tools-data";
 import { getToolComponent } from "@/components/tools/ToolRegistry";
 import { JsonLd } from "@/components/seo/JsonLd";
+<<<<<<< HEAD
 import { generateSEO, generateToolSchema } from "@/lib/seo";
+=======
+import { generateSEO, generateToolSchema, generateBreadcrumbSchema } from "@/lib/seo";
+>>>>>>> e6edf48e174f6317dd3e103a17e95c97dfc2d309
 import { Badge } from "@/components/ui/Badge";
 
 interface Props {
@@ -37,7 +41,18 @@ export default async function ToolPage({ params }: Props) {
 
   return (
     <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 py-8 sm:py-12">
+<<<<<<< HEAD
       <JsonLd data={generateToolSchema({ name: tool.name, description: tool.description, slug: tool.slug })} />
+=======
+      <JsonLd data={[
+        generateToolSchema({ name: tool.name, description: tool.description, slug: tool.slug }),
+        generateBreadcrumbSchema([
+          { name: "Home", path: "/" },
+          { name: "Tools", path: "/tools" },
+          { name: tool.name, path: `/tools/${tool.slug}` },
+        ]),
+      ]} />
+>>>>>>> e6edf48e174f6317dd3e103a17e95c97dfc2d309
 
       <Link href="/tools" className="inline-flex items-center gap-1 text-sm text-muted hover:text-brand transition-colors mb-6">
         <ArrowLeft className="h-4 w-4" /> Back to Tools

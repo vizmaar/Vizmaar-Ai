@@ -163,3 +163,21 @@ export function generateFAQSchema(
     })),
   };
 }
+<<<<<<< HEAD
+=======
+
+export function generateBreadcrumbSchema(
+  items: { name: string; path: string }[]
+) {
+  return {
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    itemListElement: items.map((item, index) => ({
+      "@type": "ListItem",
+      position: index + 1,
+      name: item.name,
+      item: `${SITE_CONFIG.url}${item.path}`,
+    })),
+  };
+}
+>>>>>>> e6edf48e174f6317dd3e103a17e95c97dfc2d309

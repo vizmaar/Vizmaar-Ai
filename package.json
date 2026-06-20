@@ -6,7 +6,12 @@
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
+<<<<<<< HEAD
     "lint": "eslint"
+=======
+    "lint": "eslint",
+    "typecheck": "tsc --noEmit"
+>>>>>>> e6edf48e174f6317dd3e103a17e95c97dfc2d309
   },
   "dependencies": {
     "framer-motion": "^12.40.0",
